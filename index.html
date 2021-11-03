@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Engine Homework</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+        <link rel="stylesheet" href="src/style.css" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">          
+          <h2>🧭ForecastApp</h2>
+          <form class="form-inline" action="" id="search-form">           
+           <input type="search" id="search-input" class="form-control mr-sm-2" placeholder="🔍Type a City..."
+            aria-label="Search" autofocus="on" autocomplete="off"/>   
+            <button id="btn-current-city" type="button" class="btn btn-success">📍 Find Current City</button>  
+          
+          </form>
+       </div>
+          <div class="col-6">                   
+            <p id= "date"></p>
+            <p id= "weather-description"></p>
+            <h2><strong id= "city"></strong></h2>
+            <h1>              
+              <span id= "temperature"></span>        
+              <span class="weather-degree"> ºC              
+              </span>
+            </h1>
+          </div>
+          <div class="col-6 extra-information">
+            <ul>              
+              <li><strong>Humidity: </strong><span id="humidity"></span>%</li>
+                <li><strong>Wind: </strong><span id="wind"></span>hm/h</li>
+            </u>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/script.js"></script>
+  </body>
+</html>
