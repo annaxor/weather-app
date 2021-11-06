@@ -75,3 +75,8 @@ body {
   .btn.btn-success {
     display: inline-flex;
   }
+
+  .open-source-text{
+      display:block;
+      text-align: center;
+  }
